@@ -3,8 +3,11 @@
 // ==========================================
 
 // Select / Create Database
-db = db.getSiblingDB('company');
-//use company;
+use company;
+
+// Use following in case above statement gave error
+// db = db.getSiblingDB('company');
+
 
 // Drop collection if re-executing to ensure clean state
 db.employees.drop();
